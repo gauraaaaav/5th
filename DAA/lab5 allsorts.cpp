@@ -9,7 +9,6 @@ void printArray(int a[], int n) {
 
 //bubble
 void bubbleSort(int a[], int n) {
-    int comparisons = 0;
 
     cout << "\nBUBBLE SORT DRY RUN TABLE\n";
     cout << "----------------------------------------------------------\n";
@@ -20,7 +19,6 @@ void bubbleSort(int a[], int n) {
 
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
-            comparisons++;
             if (a[j] > a[j + 1]) {
                 int temp = a[j];
                 a[j] = a[j + 1];
@@ -33,12 +31,10 @@ void bubbleSort(int a[], int n) {
         cout << endl;
     }
 
-    cout << "Total Comparisons = " << comparisons << endl;
 }
 
 //selection
 void selectionSort(int a[], int n) {
-    int comparisons = 0;
 
     cout << "\nSELECTION SORT DRY RUN TABLE\n";
     cout << "----------------------------------------------------------\n";
@@ -50,7 +46,6 @@ void selectionSort(int a[], int n) {
     for (int i = 0; i < n - 1; i++) {
         int min = i;
         for (int j = i + 1; j < n; j++) {
-            comparisons++;
             if (a[j] < a[min])
                 min = j;
         }
@@ -65,12 +60,10 @@ void selectionSort(int a[], int n) {
         cout << endl;
     }
 
-    cout << "Total Comparisons = " << comparisons << endl;
 }
 
 //insertion
 void insertionSort(int a[], int n) {
-    int comparisons = 0;
 
     cout << "\nINSERTION SORT DRY RUN TABLE\n";
     cout << "----------------------------------------------------------\n";
@@ -84,7 +77,6 @@ void insertionSort(int a[], int n) {
         int j = i - 1;
 
         while (j >= 0) {
-            comparisons++;
             if (a[j] > key) {
                 a[j + 1] = a[j];
                 j--;
@@ -100,7 +92,6 @@ void insertionSort(int a[], int n) {
         cout << endl;
     }
 
-    cout << "Total Comparisons = " << comparisons << endl;
 }
 
 int main() {
@@ -122,3 +113,4 @@ int main() {
 
     return 0;
 }
+
