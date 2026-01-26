@@ -27,7 +27,7 @@ int main()
 }
 	
 	if(pos!=-1)
-	cout<<"Key found at index "<<pos+1<<" position.\n";
+	cout<<"Key found at index "<<pos<<"\n";
 	else
 	
 	cout<<"Searched key not found!";
@@ -35,4 +35,5 @@ int main()
 	
 	cout<<"Total comparisons="<<comparisons;
 	
+
 }
