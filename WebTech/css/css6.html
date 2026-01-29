@@ -1,0 +1,55 @@
+<html>
+<head>
+    <style>
+        input[required] {
+            border: 2px solid red;
+        }
+
+        input[type="text"] {
+            background-color: #e6f7ff;
+        }
+
+        p[class~="highlight"] {
+            color: green;
+            font-weight: bold;
+        }
+
+        p[lang|="en"] {
+            color: blue;
+        }
+
+        a[href^="https"] {
+            color: darkorange;
+        }
+
+        img[src$=".png"] {
+            border: 3px solid purple;
+        }
+
+        div[class*="box"] {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Attribute Selector Demo</h1>
+
+    <input type="text" required placeholder="Required text field"><br><br>
+
+    <p class="text highlight">This paragraph uses [attribute~="value"] selector.</p>
+
+    <p lang="en-US">This paragraph uses [attribute|="value"] selector.</p>
+
+    <a href="https://example.com">Secure Link</a><br><br>
+
+    <img src="flower.png" alt="Sample Image" width="150"><br><br>
+
+    <div class="content-box">
+        This div uses [attribute*="value"] selector.
+    </div>
+
+</body>
+</html>
